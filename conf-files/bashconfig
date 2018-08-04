@@ -1,0 +1,28 @@
+#!/bin/bash
+
+append='
+# MISCELLANEOUS
+LS_COLORS="*.md=1;36:"$LS_COLORS
+LS_COLORS="*.txt=1;36:"$LS_COLORS
+LS_COLORS="*.pdf=1;31:"$LS_COLORS
+HISTSIZE=1000
+HISTFILESIZE=2000
+
+# ALIASES
+alias mark=remarkable
+alias le=elf_ls
+
+# Check backup
+l-backupcheck;
+'
+
+if [ -a ~/.bashrc ]; then
+	echo "Appending the following commands to ~/.bashrc";
+	echo;
+	echo "==================";
+	echo -n "$append";
+	echo "==================";
+	echo "$append" >> ~/.bashrc;
+else
+	echo "~/.bashrc does not exist.";
+fi
