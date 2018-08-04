@@ -1,0 +1,8 @@
+git
+vim
+anki
+r-base-core
+
+# pass needs xclip for copying passwords to clipboard
+pass
+xclip
