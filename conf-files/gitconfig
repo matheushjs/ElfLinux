@@ -1,0 +1,22 @@
+#!/bin/bash
+
+if [ -x /usr/bin/git ]; then
+	git config --global user.name "Matheus H. J. Saldanha";
+	git config --global user.email "mhjsaldanha@gmail.com"
+	git config --global credential.helper "cache --timeout 3600"
+	git config --global push.default "simple"
+	git config --global merge.tool "vimdiff"
+	git config --global core.excludesfile "~/.gitignore_global"
+	git config --global core.autocrlf "false"
+	git config --global core.editor "vim"
+	git config --global help.autocorrect "0"
+else
+	echo "Must install git first!";
+fi
+
+
+# Fill gitignore global
+append="*~
+.*.swp
+"
+echo "$append" >> ~/.gitignore_global;
