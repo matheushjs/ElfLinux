@@ -1,0 +1,14 @@
+#!/bin/bash
+
+mkdir -p greyscale
+
+
+counter=1;
+zero="0"
+for i in ./cropped/*; do
+	if [ $counter -eq 10 ]; then
+		zero="";
+	fi
+	convert $i -set colorspace Gray -separate -average -resize 1920x1080 ./greyscale/$zero$counter.jpg;
+	counter=$((counter + 1));
+done;

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+mkdir -p level
+
+
+counter=1;
+zero="0"
+for i in ./greyscale/*; do
+	if [ $counter -eq 10 ]; then
+		zero="";
+	fi
+	convert $i -level 25%,75% ./level/$zero$counter.jpg;
+	counter=$((counter + 1));
+done;

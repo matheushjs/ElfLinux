@@ -1,0 +1,5 @@
+#!/bin/bash
+
+mkdir -p originals
+
+convert logo: ./originals/logo.jpg

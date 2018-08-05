@@ -1,0 +1,14 @@
+#!/bin/bash
+
+mkdir -p shrinked
+
+
+counter=1;
+zero="0"
+for i in ./level/*; do
+	if [ $counter -eq 10 ]; then
+		zero="";
+	fi
+	convert $i -quality 50 ./shrinked/$zero$counter.jpg;
+	counter=$((counter + 1));
+done;
