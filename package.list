@@ -8,3 +8,4 @@ pass
 xclip
 
 sqlite3
+build-essential
