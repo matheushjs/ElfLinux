@@ -12,3 +12,7 @@ build-essential
 python3-pip
 python3-tk
 gnome-screenshot
+mirage
+
+nodejs
+npm
