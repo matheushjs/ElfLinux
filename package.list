@@ -16,3 +16,6 @@ mirage
 
 nodejs
 npm
+
+qt5-default
+qtcreator
