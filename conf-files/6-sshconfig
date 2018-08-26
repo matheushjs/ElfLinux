@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "Copy .ssh folder from another of your machines.";
+echo "You can also just copy the remote id_rsa and id_rsa.pub to the local .ssh folder. To make";
+echo "  the local machine accessible, copy the id_rsa.pub to the authorized_keys file.";
+
+echo;
+
+while [[ "$answer" != "Y" && "$answer" != "y" ]]; do
+	echo "Understood? [Y/n]";
+	read -n 1 answer;
+done
