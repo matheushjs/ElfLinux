@@ -4,5 +4,6 @@ pandas
 setuptools
 bs4
 scikit-learn
+scipy
 wheel
 jupyter
