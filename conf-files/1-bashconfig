@@ -11,6 +11,7 @@ HISTFILESIZE=2000
 # ALIASES
 alias mark=remarkable
 alias le=elf-ls
+alias rm="rm -I"
 
 # Check backup
 l-backupcheck;
