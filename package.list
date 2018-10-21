@@ -24,3 +24,5 @@ qtcreator
 
 # Manual pages for many C libraries
 glibc-doc
+
+valgrind
