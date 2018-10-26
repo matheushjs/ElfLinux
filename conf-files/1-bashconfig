@@ -1,6 +1,16 @@
 #!/bin/bash
 
 append='
+# LOCALE (to avoid them being set to brazillian)
+LC_ADDRESS="en_US.UTF-8"
+LC_IDENTIFICATION="en_US.UTF-8"
+LC_MEASUREMENT="en_US.UTF-8"
+LC_MONETARY="en_US.UTF-8"
+LC_NAME="en_US.UTF-8"
+LC_NUMERIC="en_US.UTF-8"
+LC_PAPER="en_US.UTF-8"
+LC_TELEPHONE="en_US.UTF-8"
+
 # MISCELLANEOUS
 LS_COLORS="*.md=1;36:"$LS_COLORS
 LS_COLORS="*.txt=1;36:"$LS_COLORS
