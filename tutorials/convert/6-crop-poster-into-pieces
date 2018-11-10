@@ -6,3 +6,10 @@
 # Otherwise each piece will be a blank copy of the poster, with that piece in its original position.
 # -density 190 controls the quality of the pdf. The default value ruins the quality.
 convert -density 190 poster.pdf -crop 25%x25% +repage output.pdf
+
+
+# The resulting pages probably won't print correctly in A4 papers
+# I suggest that you add some border, and then use another software to "print to file"
+#   while setting "fit to printable area" option.
+convert -density 190 poster-crop.pdf -crop 25%x25% +repage -bordercolor white -border 45x45 output.pdf
+
