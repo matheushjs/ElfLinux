@@ -1,0 +1,7 @@
+# vim: filetype=sh
+
+# This will generate multiple output files
+# output-0.pdf, output-1.pdf
+# The +repage is needed to make each piece from the poster to occupy a full page.
+# Otherwise each piece will be a blank copy of the poster, with that piece in its original position.
+convert poster.pdf -crop 25%x25% +repage output.pdf
