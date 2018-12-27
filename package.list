@@ -29,3 +29,6 @@ valgrind
 
 # For the amazing pdfcrop tool, uncomment below
 # texlive-extra-utils
+
+# For japanese input
+ibus-anthy
