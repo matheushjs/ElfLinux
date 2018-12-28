@@ -1,6 +1,4 @@
-#!/bin/bash
 
-append='
 # LOCALE (to avoid them being set to brazillian)
 LC_ADDRESS="en_US.UTF-8"
 LC_IDENTIFICATION="en_US.UTF-8"
@@ -27,15 +25,4 @@ alias la="ls -Ah"
 
 # Check backup
 # l-backupcheck;
-'
 
-if [ -a ~/.bashrc ]; then
-	echo "Appending the following commands to ~/.bashrc";
-	echo;
-	echo "==================";
-	echo -n "$append";
-	echo "==================";
-	echo "$append" >> ~/.bashrc;
-else
-	echo "~/.bashrc does not exist.";
-fi

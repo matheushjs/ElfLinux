@@ -124,6 +124,15 @@ if [ -x /usr/bin/mint-fortune ]; then
      /usr/bin/mint-fortune
 fi
 
+# LOCALE (to avoid them being set to brazillian)
+LC_ADDRESS="en_US.UTF-8"
+LC_IDENTIFICATION="en_US.UTF-8"
+LC_MEASUREMENT="en_US.UTF-8"
+LC_MONETARY="en_US.UTF-8"
+LC_NAME="en_US.UTF-8"
+LC_NUMERIC="en_US.UTF-8"
+LC_PAPER="en_US.UTF-8"
+LC_TELEPHONE="en_US.UTF-8"
 
 # MISCELLANEOUS
 LS_COLORS="*.md=1;36:"$LS_COLORS
@@ -134,7 +143,11 @@ HISTFILESIZE=2000
 
 # ALIASES
 alias mark=remarkable
-alias le=elf_ls
+alias le=elf-ls
+alias rm="rm -I"
+alias ll="ls -alFh"
+alias la="ls -Ah"
 
 # Check backup
-l-backupcheck;
+# l-backupcheck;
+

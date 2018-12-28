@@ -1,0 +1,20 @@
+
+set clipboard=unnamed
+set autoindent
+set ruler
+colo default
+set shiftwidth=4
+set tabstop=4
+set list lcs=tab:^\ ,trail:@
+
+\" set cuda filetype detection
+au BufNewFile,BufRead *.cu set ft=cuda
+au BufNewFile,BufRead *.cuh set ft=cuda
+
+\" For all text files set 'textwidth' to 150 characters.
+autocmd FileType text setlocal textwidth=150
+
+\" Add python dictionary
+if has(\"autocmd\")
+	autocmd FileType python set complete+=k/home/mathjs/.vim/dicts/python-dict isk+=.,(
+endif

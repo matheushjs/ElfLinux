@@ -1,0 +1,39 @@
+#!/bin/bash
+
+function query {
+	while [[ "$answer" != "Y" && "$answer" != "y" ]]; do
+		echo "Next? [Y/n]";
+		read -n 1 answer;
+	done
+}
+
+echo "Append './appends/bashrc-app' to '~/.bashrc'";
+query;
+
+echo "Append './appends/profile-app' to '~/.profile'";
+query;
+
+echo "Append './appends/gitignore_global-app' to '~/.gitignore_global'";
+query;
+
+echo "Append './appends/vimrc-app' to '~/.vimrc'";
+query;
+
+echo "Append './appends/cuda.vim-app' to '~/.vim/after/syntax/cuda.vim'";
+query;
+
+echo "Add vim dictionaries to '~/.vim/dicts/'";
+query;
+
+echo "Copy .gnupg folder from another of your machines.";
+echo "You can also import keys, but it will mess up ownership.";
+query;
+
+echo "Copy .ssh folder from another of your machines.";
+echo "You can also just copy the remote id_rsa and id_rsa.pub to the local .ssh folder. To make";
+echo "  the local machine accessible, copy the id_rsa.pub to the authorized_keys file.";
+query;
+
+echo "Copy .password-store folder from another of your machines (must be after copying the gnupg folders).";
+echo "You can also pull it directly from the git repository.";
+query;

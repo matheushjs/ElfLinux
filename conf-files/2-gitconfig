@@ -12,11 +12,5 @@ if [ -x /usr/bin/git ]; then
 	git config --global help.autocorrect "0"
 else
 	echo "Must install git first!";
+	exit 1;
 fi
-
-
-# Fill gitignore global
-append="*~
-.*.swp
-"
-echo "$append" >> ~/.gitignore_global;
