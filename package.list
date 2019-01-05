@@ -34,3 +34,10 @@ valgrind
 
 # For japanese input
 ibus-anthy
+
+ffmpeg
+
+# ElfMApp
+libqt5multimedia5
+libqt5multimedia5-plugins
+qtmultimedia5-dev
