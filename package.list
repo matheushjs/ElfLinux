@@ -41,3 +41,6 @@ ffmpeg
 libqt5multimedia5
 libqt5multimedia5-plugins
 qtmultimedia5-dev
+
+# Video editor
+kdenlive
