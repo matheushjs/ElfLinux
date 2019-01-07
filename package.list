@@ -12,6 +12,7 @@ build-essential
 python3-pip
 python3-tk
 python3-dev
+python-pip
 jupyter-notebook
 
 gnome-screenshot

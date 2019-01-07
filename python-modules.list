@@ -1,9 +1,0 @@
-numpy
-matplotlib
-pandas
-setuptools
-bs4
-scikit-learn
-scipy
-wheel
-termcolor
