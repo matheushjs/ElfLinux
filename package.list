@@ -15,10 +15,6 @@ python3-dev
 python-pip
 jupyter-notebook
 
-gnome-screenshot
-mirage
-inkscape
-
 nodejs
 npm
 
@@ -43,5 +39,9 @@ libqt5multimedia5
 libqt5multimedia5-plugins
 qtmultimedia5-dev
 
-# Video editor
+# Image & Video
 kdenlive
+imagemagick
+gnome-screenshot
+mirage
+inkscape
