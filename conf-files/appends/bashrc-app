@@ -22,6 +22,7 @@ alias le=elf-ls
 alias rm="rm -I"
 alias ll="ls -alFh"
 alias la="ls -Ah"
+alias evim="elf-vim"
 
 # Check backup
 # l-backupcheck;
