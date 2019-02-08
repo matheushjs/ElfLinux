@@ -18,9 +18,10 @@ jupyter-notebook
 nodejs
 npm
 
+# Some C/C++ things
 qt5-default
 qtcreator
-
+doxygen
 # Manual pages for many C libraries
 glibc-doc
 
@@ -36,16 +37,15 @@ linux-tools-generic
 # For japanese input
 ibus-anthy
 
-ffmpeg
-
 # ElfMApp
 libqt5multimedia5
 libqt5multimedia5-plugins
 qtmultimedia5-dev
 
-# Image & Video
+# Multimedia
 kdenlive
 imagemagick
 gnome-screenshot
 mirage
 inkscape
+ffmpeg
