@@ -24,6 +24,9 @@ qtcreator
 doxygen
 # Manual pages for many C libraries
 glibc-doc
+mpich
+mpich-doc
+libmpich-dev
 
 # Profiling & Debugging tools
 valgrind
