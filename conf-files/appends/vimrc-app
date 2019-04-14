@@ -15,8 +15,8 @@ if has("autocmd")
 	" PYTHON
 	autocmd FileType python set complete+=k/home/mathjs/.vim/dicts/python-dict
 
-	" HTML
-	autocmd FileType html set expandtab
-	autocmd FileType html set tabstop=2
-	autocmd FileType html set shiftwidth=2
+	" HTML, CSS, JS, JSON
+	autocmd FileType html,css,javascript,json set expandtab
+	autocmd FileType html,css,javascript,json set tabstop=2
+	autocmd FileType html,css,javascript,json set shiftwidth=2
 endif " has("autocmd"
