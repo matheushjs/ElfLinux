@@ -52,3 +52,5 @@ gnome-screenshot
 mirage
 inkscape
 ffmpeg
+sox
+libsox-fmt-mp3
