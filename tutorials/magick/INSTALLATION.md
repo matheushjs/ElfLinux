@@ -3,7 +3,7 @@ In order to install the latest verions of ImageMagick, you download the tar file
 Then you must execute
 
 ```
-./configure --with-modules --enable-shared --with-perl --prefix="/usr/local/"
+./configure --with-modules --enable-shared --with-perl --with-gslib --prefix="/usr/local/"
 make
 sudo make install
 sudo ldconfig
@@ -73,4 +73,21 @@ matches your expectations.
   ZSTD              --with-zstd=yes		no
 ```
 
+I once had to install the following packages:
+
+```
+libltdl-dev
+libbz2-dev
+libfftw3-dev
+libfreetype6-dev
+libgraphviz-dev
+libgs-dev
+libjpeg-dev
+libpango1.0-dev
+libpng-dev
+libraw-dev
+libwebp-dev
+libxml2-dev
+ghostscript
+```
 
