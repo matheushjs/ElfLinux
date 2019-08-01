@@ -76,6 +76,7 @@ matches your expectations.
 I once had to install the following packages:
 
 ```
+libperl-dev
 libltdl-dev
 libbz2-dev
 libfftw3-dev
