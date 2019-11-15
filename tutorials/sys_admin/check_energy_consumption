@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# This program will show how much energy your laptop is using.
+# Note that it might be the case that this will only work if the power cable is not connected.
+#
+# tags: power draw, voltage, watts, energy consumption
+
+echo "If results are weird, try plugging out the power cable."
+
+current=$(cat /sys/class/power_supply/BAT1/current_now) # micro amperes
+voltage=$(cat /sys/class/power_supply/BAT1/voltage_now) # micro volts
+power=$(( $current * $voltage ))
+
+echo $current | awk '{print $1*10^-6 " A"}';
+echo $voltage| awk '{print $1*10^-6 " V"}';
+echo $power | awk '{print $1*10^-12 " W"}';
