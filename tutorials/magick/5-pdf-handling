@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# To turn a single-page pdf into an image with 300 ppi:
+
+magick -density 300 -units pixelsperinch page.pdf page.png;
+
+# Combine images into a PDF
+
+magick ./shrinked/*.jpg output.pdf
+
+# To specify a page size:
+
+magick ./shrinked/*.jpg -units pixelsperinch -density 72 -page letter output.pdf
