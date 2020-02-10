@@ -18,24 +18,17 @@ function query {
 	echo;
 }
 
-alert BASHRC
-echo "Append './appends/bashrc-app' to '~/.bashrc'";
+alert APPENDS
+echo "See './appends/' and perform the due appends.";
 query;
 
-alert PROFILE
-echo "Append './appends/profile-app' to '~/.profile'";
-query;
-
-alert GIT IGNORE
-echo "Append './appends/gitignore_global-app' to '~/.gitignore_global'";
-query;
-
-alert VIMRC
-echo "Append './appends/vimrc-app' to '~/.vimrc'";
+alert FULL-VERSIONS
+echo "See './full-versions/' and see which full version files you want to use.";
+echo "Careful to not unintentionally erase existing files.";
 query;
 
 alert VIM SYNTAX
-echo "Append './appends/cuda.vim-app' to '~/.vim/after/syntax/cuda.vim'";
+echo "Move the syntax files in './full-versions/' to '~/.vim/after/syntax/'";
 query;
 
 alert VIM DICTS
