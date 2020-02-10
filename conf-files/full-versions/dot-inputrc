@@ -1,0 +1,3 @@
+# right arrow for cycling through options
+"\033[1;2C": menu-complete
+"\033[1;2D": menu-complete-backward
