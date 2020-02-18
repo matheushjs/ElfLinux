@@ -50,3 +50,13 @@ alert PASS
 echo "Copy .password-store folder from another of your machines (must be after copying the gnupg folders).";
 echo "You can also pull it directly from the git repository.";
 query;
+
+alert CONFIGURATIONS
+echo "Check the folders .local/ .conf/ and .cache/ in your main backup storage."
+echo "Copy to the respective folders in the new machine ONLY the folders you think will matter"
+query;
+
+alert FIREFOX
+echo "Double check if you copied mozilla folders in .local/ .conf/ and .cache/"
+echo "Copy ~/.mozilla to the new machine too!!!!"
+query;
