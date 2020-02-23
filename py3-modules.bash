@@ -16,6 +16,7 @@ bs4
 scikit-learn
 scipy
 termcolor
+seaborn
 ";
 
 pip3 install $PACKAGES;
