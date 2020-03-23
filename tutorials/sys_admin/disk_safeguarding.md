@@ -9,3 +9,19 @@
 - Watch out for read errors. A disk without read errors means low chance of file corruption, and thus is **fine to backup**. Write errors alone means maybe you can just exclude the sectors that can be written to.
 
 
+### Checking file integrity between two backups
+
+If you have two very similar file trees (such as 2 backups, or one backup + the original files), then you can use rsync to verify whether the files are not corrupt.
+
+Usually rsync uses timestamp + file size to determine whether two files are different. You can make it use checksums instead, using the -c flag:
+
+```
+rsync -avi --dry-run --delete -c --exclude ".*" ./mathjs_backup/ ./last-backup/ | tee ~/output.txt
+```
+
+This will place in `~/output.txt` the result of the checking. Lines starting with a dot are unchanged files, so you can **filter only relevant lines** using:
+
+```
+cat ~/output.txt | grep -v "^\."
+```
+
