@@ -25,3 +25,19 @@ This will place in `~/output.txt` the result of the checking. Lines starting wit
 cat ~/output.txt | grep -v "^\."
 ```
 
+
+### Performing SMART tests
+
+SMART tests can be performed using the usually built-in tool `gnome-disks`.
+
+If you want a terminal command, install the package `smartmontools`, then you can run:
+
+```
+smartctl -x /dev/sda     # To display all available SMART information on the device
+smartclt --test=long     # To perform a long SMART verification on the device (very useful)
+```
+
+Make sure to periodically (every semester?) run the long test.
+
+
+
