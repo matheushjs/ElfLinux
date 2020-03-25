@@ -41,3 +41,13 @@ Make sure to periodically (every semester?) run the long test.
 
 
 
+### Checking for read/write errors
+
+Use the command `e2fsck` to do these checks:
+
+```
+e2fsck -c -v -t -t /dev/sda1       # Performs read-only checks
+e2fsck -c -c -v -t -t /dev/sda1    # Performs read and write checks (non-destructive)
+```
+
+If you want it to automatically solve all problems found, attach the `-y` flag.
