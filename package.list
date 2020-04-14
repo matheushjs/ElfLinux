@@ -55,3 +55,6 @@ inkscape
 ffmpeg
 sox
 libsox-fmt-mp3
+
+# For recording internal audio in audacity
+pavucontrol
