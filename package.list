@@ -47,6 +47,7 @@ libqt5multimedia5-plugins
 qtmultimedia5-dev
 
 # Multimedia
+vlc
 kdenlive
 imagemagick
 gnome-screenshot
