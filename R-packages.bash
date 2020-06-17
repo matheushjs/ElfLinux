@@ -8,4 +8,4 @@ function install_packages {
 };
 
 sudo bash -c "$(declare -f install_packages); install_packages";
-sudo R -e 'install.packages(c("R.utils", "tseriesChaos", "EMD", "forecast", "rmutil", "truncnorm", "rgl", "viridis", "devtools", "elfDistr", "ggamma", "ollggamma"))'
+sudo R -e 'install.packages(c("R.utils", "tseriesChaos", "EMD", "forecast", "rmutil", "truncnorm", "rgl", "viridis", "devtools", "elfDistr", "ggamma", "ollggamma", "microbenchmark"))'
