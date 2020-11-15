@@ -1,0 +1,25 @@
+Nov 15 2020
+
+Check of /dev/sdb1, the backup disk at Biocom
+
+main_backup:
+
+      273309 inodes used (0.90%, out of 30531584)
+         884 non-contiguous files (0.3%)
+          52 non-contiguous directories (0.0%)
+             # of inodes with ind/dind/tind blocks: 0/0/0
+             Extent depth histogram: 272822/100
+    34366165 blocks used (28.15%, out of 122096384)
+         575 bad blocks
+           1 large file
+
+      224895 regular files
+       48024 directories
+           0 character device files
+           0 block device files
+           0 fifos
+           7 links
+         379 symbolic links (377 fast symbolic links)
+           1 socket
+------------
+      273306 files
