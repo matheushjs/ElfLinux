@@ -15,6 +15,7 @@ python3-tk
 python3-dev
 python-pip
 jupyter-notebook
+cmake
 
 nodejs
 npm
